@@ -1,38 +1,209 @@
+body {
+  background-image: url("./assets/devil2.jpg");
+  background-repeat:no-repeat;
+  background-position: center;
+  background-size: fill;
+  margin-left:25%;
+  margin-right: 25%;
+
+}
+
 .App {
-  text-align: center;
+  text-align:end;
+  max-width: 728px;
+  margin: 0 auto;
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App header {
+  background-image: url("./assets/cuteheader.jpg");
+  background-size: 250px 80px;
+  border-radius: 50px 50px 50px 50px;
+  height: 10vh;
+  min-height: 50px;
+  color: rgb(12, 11, 11);
+  position: fixed;
+  width: 100%;
+  max-width: 530px;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 99;
+  padding: 30px;
+  box-sizing: border-box;
+  font-family: cursive;
+  font-size: small;
+  font-variant-position: sub;
+  position: relative;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App section {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  min-height: 100vh;
+  background-image: url("./assets/sam2119931.jpg");
+  /* background-color: rgb(5, 5, 5);  */
+  border-radius: 50px 50px 30px 30px;
+  background-repeat: no-repeat;
+  background-size:cover;
 }
 
-.App-link {
-  color: #61dafb;
+main {
+  padding: 10px;
+  height: 80vh;
+  margin: 10vh 0 10vh;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+main::-webkit-scrollbar {
+  width: 0.25rem;
+  position: relative;
+}
+
+main::-webkit-scrollbar-track {
+  background: #1e1e24;
+  position: relative;
+}
+
+main::-webkit-scrollbar-thumb {
+  background: #6649b8;
+}
+
+form {
+  height: 10vh;
+  position: relative;
+  bottom: 0;
+  background-image: url("./assets/incubus.jpg");
+  background-size: 30px 50px;
+  background-size: 100px 60px; 
+  /* margin-right: 40%; */
+  margin-bottom: 1%;
+  width: 40px;
+  height: 40px;
+  width: 100%;
+  max-width: 728px;
+  display: flex;
+  font-size: 1.5rem;
+  border-radius: 50px 5px 50px 50px;
+}
+
+form button {
+  width: 20%;
+  background-color: rgba(233, 13, 13, 0);
+  position: relative;
+  
+}
+
+
+input {
+  line-height: 1.5;
+  width: 100%;
+  font-size: 1.5rem;
+  background: rgb(20, 4, 240);
+  color: rgb(241, 245, 246);
+  outline: none;
+  border: none;
+  padding: 0 10px;
+  font-style: italic;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin-right: auto;
+  border-radius: 5px 50px 50px 50px;
+}
+
+button {
+  background-color: #dfb78773; 
+  border: none;
+  border-radius: 50px 50px 50px 50px;
+  color: rgb(7, 7, 7);
+  padding: 15px 32px;
+  text-align: right;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  font-size: x-large;
+ 
+  
+
+  
+}
+
+button:enabled {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+
+.sign-in {
+  color: #0f0f0f;
+  background-color: #f19216;
+  border-radius: 50px 50px 50px 50px;
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: bottom;
+  opacity: 1.5;
+  
+}
+.signin_ptag {
+  margin:0px auto; 
+  border-radius: 50px 50px 50px 50px;
+  text-align: bottom;
+}
+
+
+
+ul, li {
+  text-align: left;
+  list-style: none;
+}
+
+p {
+  max-width: 500px;
+  margin-bottom: 10px;
+  line-height: 24px;
+  padding: 10px 20px;
+  border-radius: 25px;
+  position: relative;
+  color: rgb(5, 5, 5);
+  text-align: center;
+  font-size: larger;
+  font-family: cursive;
+  font-weight: 900;
+  
+}
+
+.message {
+  display: flex;
+  align-items: center;
+}
+
+
+.sent {
+  flex-direction: row-reverse;
+}
+
+.sent p {
+  color: rgb(210, 207, 221);
+  background: rgb(24, 9, 224);
+  align-self: flex-end;
+  font-family:cursive;
+  font-weight: bold;
+  
+}
+.received p {
+  background: #eae5e5;
+  color: rgb(0, 0, 0);
+  font-family: cursive;
+  font-weight: bolder;
+}
+
+img {
+  width: 50px;
+  height: 50px;
+  border-radius: 60%;
+  margin: 2px 7px;
 }
